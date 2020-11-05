@@ -1,0 +1,17 @@
+fA = input('Please specify frequency A: '); 
+fB = input('Please specify frequency B: ');
+randomOrder = randperm(2); 
+[fHigh, fLow] = highlowsound(fA, fB)
+if randomOrder(1) == 1
+      PlayTone(fLow);
+      pause
+      PlayTone(fHigh);
+else
+      PlayTone(fB);
+pause
+      PlayTone(fA);
+end
+
+
+
+response = input('Which tone was lower frequency, first (1) or second (2)? ');

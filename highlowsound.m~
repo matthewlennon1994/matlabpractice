@@ -1,0 +1,5 @@
+function [fHigh fLow] = highlowsound(fA, fB)
+if fA > fB
+    fHigh = fA
+    fLow = f
+
